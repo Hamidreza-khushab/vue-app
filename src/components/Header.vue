@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div class="menuh">
+            <p v-for="menu in menus" :key="menu">{{ menu }} </p>
+        </div>
         <h1>{{ title }}</h1>
         <h2 v-if="extD">{{ titleD }}</h2>
         <h2>{{ name }}</h2>
@@ -16,7 +19,8 @@ export default {
     props: {
     title: String,
     titleD: String,
-    extD : Boolean
+    extD : Boolean,
+    menus : Array
   },
     components: {},
     data: () => ({
@@ -35,5 +39,9 @@ export default {
 <style scoped>
 .customer{
     color: red;
+}
+.menuh{
+    display: flex;
+    gap: 10px;
 }
 </style>

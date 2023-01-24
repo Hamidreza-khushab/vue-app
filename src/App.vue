@@ -1,5 +1,5 @@
 <template>
-    <HeaderApp title="Vue.js" :titleD="title" :extD="ext"/>
+    <HeaderApp title="Vue.js" :titleD="title" :extD="ext" :menus="menus"/>
 </template>
 
 <script>
@@ -9,7 +9,8 @@ export default {
   name: 'App',
   data : () =>( {
     title : 'Vue',
-    ext : true
+    ext : true ,
+    menus : ['Home' , 'About' , 'Contact']
   }),
   components: {
      HeaderApp
