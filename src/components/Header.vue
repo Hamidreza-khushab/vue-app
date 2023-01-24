@@ -6,7 +6,7 @@
         <h1>{{ title }}</h1>
         <h2 v-if="extD">{{ titleD }}</h2>
         <h2>{{ name }}</h2>
-        <p>{{ i }}</p>
+        <p>{{ this.Add }}</p>
         <p v-if='jender'>man</p>
         <p v-else>woman</p>
         <p class="customer" v-for="customer in customers" :key="customer.id">{{ customer.name + '   ' + customer.city}} </p>
@@ -25,13 +25,18 @@ export default {
     components: {},
     data: () => ({
         name: 'Hello Saeed!',
-        i: 1,
+        i: 100,
         jender: true,
         customers: [
             { id: 1, name: 'saeed', city: 'Breman' },
             { id: 2, name: 'behnam', city: 'Chemnitz' }
         ]
-    })
+    }),
+    computed : {
+        Add  ()  {
+            return  this.i + 20
+        }
+    }
 }
 
 </script>
