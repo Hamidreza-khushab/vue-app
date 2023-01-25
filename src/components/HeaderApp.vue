@@ -25,7 +25,7 @@ export default {
     components: {},
     data: () => ({
         name: 'Hello Saeed!',
-        i: 100,
+        i: 500,
         jender: true,
         customers: [
             { id: 1, name: 'saeed', city: 'Breman' },

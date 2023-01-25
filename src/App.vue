@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import HeaderApp from './components/Header.vue'
+import HeaderApp from './components/HeaderApp.vue'
 
 export default {
   name: 'App',
