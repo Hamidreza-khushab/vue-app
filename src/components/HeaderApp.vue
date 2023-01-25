@@ -10,6 +10,7 @@
         <p v-if='jender'>man</p>
         <p v-else>woman</p>
         <p class="customer" v-for="customer in customers" :key="customer.id">{{ customer.name + '   ' + customer.city}} </p>
+        <hr>
     </div>
 </template>
 
